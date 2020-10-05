@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'My Lucida';
     src: url('../font/LucidaGrande.ttf');
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
 }
 
@@ -19,7 +19,7 @@ a {
 }
 
 .wrapper {
-    padding: 25px 0;
+    padding: 40px 0;
 }
 
 body > header {
@@ -28,16 +28,13 @@ body > header {
     box-shadow: 1px 0px 8px rgb(200, 200, 200);
 }
 
-header .logo-search form  {
-    width: 50%;
-}
+
 
 header .user {
     float: right;
 }
 
 header .user a {
-    font-size: 13px;
     color: #89949b;
     padding-top: 5px;
 }
@@ -54,13 +51,11 @@ main article {
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 11px;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
 nav ul li a { 
-    font-size: 14px;
     font-weight: normal;
     color: #828c92;
 }
@@ -85,14 +80,12 @@ nav ul li:last-child {
 
 h1 {
     color: #4b5c66;
-    font-size: 24px;
     font-weight: normal;
     margin: 0 0 8px 0;
 }
 
 .name p { 
     color: #a0aab1;
-    font-size: 12px;
 }
 
 .name p img { 
@@ -102,7 +95,6 @@ h1 {
 
 .stats-links {
     color: #4b5c66;
-    font-size: 12px;
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
@@ -117,13 +109,11 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 12px;
     font-weight: normal;
     color: #4b5c66;
 }
 
 h2 {
-    font-size: 20px;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -137,7 +127,6 @@ input.search {
     box-shadow: none;
     height: 28px;
     width: 100%;
-    font-size: 13px;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
     margin: 0;
@@ -145,18 +134,174 @@ input.search {
     top: 11px;
     box-shadow: inset 1px 1px 5px #d5d5d5;
 }
+@media (max-width: 650px)
+{
+    .search {
+       display: none;
+    }
+
+    .share{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1400px)
+{
+    header .user a {
+        font-size: 0.8em;}
+
+        h3{font-size: 0.6875em;}
+
+        nav ul li a { 
+            font-size: 0.8750em;}
+
+        h1 {
+            font-size: 1.5em;}
+        
+         .name p { 
+               
+                font-size: 0.7500em;
+            }
+
+            .stats-links {
+                
+                font-size: 0.700em;
+                
+            }
+            .stats-links a {
+                font-size: 0.7500em;
+               
+            }
+            h2 {
+                font-size: 1.2500em;
+               
+            }
+            input.search {
+              
+                font-size: 0.8125em;
+            }     
+            .station {
+                font-size: 0.7500em;} 
+            
+            #albums article {
+                    font-size: 0.8125em;
+                    
+                }      
+                
+            .btn-light{
+                    font-size: 0.7125em;
+                }
+}
+@media (max-width: 600px)
+{
+    header .user a {
+        font-size: 0.5em;}
+
+        h3{font-size: 0.4875em;}
+
+        nav ul li a { 
+            font-size: 0.5750em;}
+
+        h1 {
+            font-size: 0.8em;}
+        
+         .name p { 
+               
+                font-size: 0.4500em;
+            }
+
+            .stats-links {
+                
+                font-size: 0.4500em;
+                
+            }
+            .stats-links a {
+                font-size: 0.5500em;
+               
+            }
+            h2 {
+                font-size: 0.8500em;
+               
+            }
+            input.search {
+              
+                font-size: 0.5125em;
+            }     
+            .station {
+                font-size: 0.4500em;} 
+            
+            #albums article {
+                    font-size: 0.5125em;
+                    
+                } 
+
+            .btn-light{
+                    font-size: 0.5125em;
+                }
+}
+@media (max-width: 450px)
+{header .user a {
+    font-size: 0.4em;}
+
+    h3{font-size: 0.4875em;}
+
+    nav ul li a { 
+        font-size: 0.4750em;}
+
+    h1 {
+        font-size: 0.5em;}
+    
+     .name p { 
+           
+            font-size: 0.3500em;
+        }
+
+        .stats-links {
+            
+            font-size: 0.5500em;
+            
+        }
+        .stats-links a {
+            font-size: 0.5500em;
+           
+        }
+        h2 {
+            font-size: 0.6500em;
+           
+        }
+        input.search {
+          
+            font-size: 0.4215em;
+        }     
+        .station {
+            font-size: 0.3500em;} 
+        
+        #albums article {
+                font-size: 0.4125em;
+                
+            } 
+        .btn-light{
+                font-size: 0.3125em;
+            }
+}
+
 
 input.submit {
     display: none;
 }
+    
+
+
+
+
 
 .station {
-    font-size: 12px;
     color: #008fd5;
     border-radius: 5px;
     border: 1px solid #b8c3c9;
     cursor: pointer;
-    padding: 7px 10px 7px 30px;
+    padding: 7px 30px 7px 30px;
     box-shadow: 1px 1px #d5d5d5;
     background: url("../img/icon/station.png") no-repeat 8px;
     transition: all 0.4s;
@@ -170,7 +315,6 @@ input.submit {
 
 
 #albums article {
-    font-size: 13px;
     color: #89949b;
     margin: 10px 0;
 }
